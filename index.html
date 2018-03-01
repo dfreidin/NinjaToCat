@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ninja to Cat</title>
+        <style>
+            div {
+                width: 200px;
+            }
+        </style>
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script>
+            $(document).ready(function(){
+                $("img").click(function(){
+                    var old_src = $(this).attr("src");
+                    var new_src = $(this).attr("alt_src");
+                    $(this).attr({src: new_src, alt_src: old_src});
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <div>
+            <img src="ninja0.png" alt_src="cat0.png">
+            <img src="ninja1.png" alt_src="cat1.png">
+            <img src="ninja2.png" alt_src="cat2.png">
+            <img src="ninja3.png" alt_src="cat3.png">
+            <img src="ninja4.png" alt_src="cat4.png">
+        </div>
+    </body>
+</html>
